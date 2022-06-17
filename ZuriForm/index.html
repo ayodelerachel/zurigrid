@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Montserrat&display=swap');
+        </style>
+    <style>
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background: hsl(0,100%,74%);
+    margin: 90px;
+    padding: 30px;
+    }
+
+.container{
+    gap: 1.5rem;
+    height: 100vh;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    display: grid;
+    
+    
+    
+}
+
+.item1{
+    background-color: hsl(248, 32%, 49%);
+    grid-column: 9/13;
+    grid-row: 4/5;
+}
+
+.item2{
+    background-color: white;
+    grid-column: 9/13;
+    grid-row: 5/13;
+    padding: 12px;
+    /* margin: 20px; */
+}
+.grid-item{
+    text-align: center;
+    padding: 10px;
+    border-radius: 12px ;
+}
+.item3{
+    background-color: none;
+    grid-column:5/9;
+    grid-row:  5/13;
+    color: white;
+    text-align: justify;
+}
+.input{
+    height: 35px;
+    font-size: 15pt;
+    border: 1px solid hsl(246, 25%,77%);
+}
+::placeholder{
+    color: black;
+    font-family: sans-serif;
+    font-size:12px ;
+    padding: 15px;
+    
+}
+button{
+    width: 250px;
+    height: 40px;
+font-size: small;
+    background-color: hsl(154,59%,51%);
+    color: white;
+    border: 1px solid hsl(154,59%,51%);
+}
+h1{
+    font-family: poppins;
+    font-weight: 700;
+    font-stretch: ultra-condensed;
+}
+    </style>
+</head>
+<body>
+
+
+<div class="container">
+<div class="grid-item item1">
+<h4>Try it free 7 days</h4>
+<p>then $20/mo thereafter</p>
+</div>
+
+
+
+
+
+
+<div class="grid-item item2">
+<br/><br/>
+    <input type="text" 
+    name="text" 
+   class="input"
+     value="" 
+     required="required"
+     placeholder="CC"
+     > <br/><br/>
+
+     <input type="text" 
+    name="text" 
+   class="input"
+     value="" 
+     required="required"
+     placeholder="Afflon"
+     > <br/><br/>
+
+     <input type="email" 
+     name="email" 
+    class="input"
+      value="" 
+      required="required"
+      placeholder="Email Address"
+      > <br/><br/>
+
+      <input type="password" 
+    name="password" 
+   class="input"
+     value="" 
+     required="required"
+     placeholder="12345678"
+     > <br/><br/>
+     <button>CLAIM YOUR FREE TRIAL</button> <br/><br/>
+     <p style="color:hsl(249, 10%, 26%); font-size: 10px; font-weight: bold;">By clicking the button, you are agreeing to our <span style="color:hsl(0,100%,74%) ;">Terms and Services</span></p>
+</div>
+<div class="grid-item item3" >
+<h1>Learn to code by </h1>
+<h1>Watching others</h1><br/>
+
+<p style="font-weight:120px ;">See how experienced developers solve problems in real 
+    time watching scripted tutorials is great, but understanding how developers
+    think is invaluable
+</p>
+
+
+</div>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
